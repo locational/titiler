@@ -34,8 +34,8 @@ class StackSettings(pydantic.BaseSettings):
     ###########################################################################
     # AWS ECS
     # The following settings only apply to AWS ECS deployment
-    min_ecs_instances: int = 5
-    max_ecs_instances: int = 50
+    min_ecs_instances: int = 2
+    max_ecs_instances: int = 4
 
     # CPU value      |   Memory value
     # 256 (.25 vCPU) | 0.5 GB, 1 GB, 2 GB
